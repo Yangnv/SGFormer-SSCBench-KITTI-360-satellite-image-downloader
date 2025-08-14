@@ -1,4 +1,3 @@
-# SGFormer-SSCBench-KITTI-360-satellite-image-downloader
 SGFormer-SSCBench-KITTI-360 卫星图像下载器
 
 ## 概述
