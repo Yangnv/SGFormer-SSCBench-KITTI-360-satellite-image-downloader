@@ -3,7 +3,7 @@ SSCBench-KITTI-360 卫星图像下载器
 
 ## 概述
 
-这是一个 Python 脚本，用于为 [SSCBench-KITTI-360](https://huggingface.co/datasets/ai4ce/SSCBench/tree/main/sscbench-kitti) 数据集自动下载对应的卫星图像。脚本会读取数据集中每个时间帧的 GPS 坐标，并从 Google Maps Static API 获取高质量的卫星视图图像，这对于进行卫星-地面视图融合的研究（如 [SGFormer](https://github.com/gxytcrc/SGFormer)）至关重要。
+这是一个 Python 脚本，用于为  [SGFormer](https://github.com/gxytcrc/SGFormer)的[SSCBench-KITTI-360](https://huggingface.co/datasets/ai4ce/SSCBench/tree/main/sscbench-kitti) 数据集自动下载对应的卫星图像。脚本会读取数据集中每个时间帧的 GPS 坐标，并从 Google Maps Static API 获取高质量的卫星视图图像。
 
 ## 主要功能
 
