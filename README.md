@@ -1,4 +1,4 @@
-# SGFormer-SSCBench-KITTI-360 数据集卫星图像下载器
+# SGFormer-SSCBench-KITTI-360 数据集卫星图像下载脚本
 
 ## 概述
 
