@@ -38,7 +38,7 @@
       - `URL_SIGNING_SECRET`: 您的 URL 签名密钥。
       - `DATASET_ROOT`: 您存放 SSCBench-KITTI-360 数据集的根目录路径。
       - `SEQUENCES_TO_DOWNLOAD`: 一个 Python 列表，包含了您希望下载的所有行驶序列的名称。
-      - `ZOOM_LEVEL`: 地图的缩放级别，**19** 是为了匹配约0.2米/像素的比例尺（实际应为[0.19](https://timwhitlock.info/blog/2010/04/google-maps-zoom-scales/)）。
+      - `ZOOM_LEVEL`: 地图的缩放级别，**19** 是为了匹配约0.2米/像素的比例尺（实际应为[0.19](https://timwhitlock.info/blog/2010/04/google-maps-zoom-scales/)米/像素）。
       - `MAX_WORKERS`: 并发下载的线程数。根据您的网络状况调整，建议从10开始。
       - `proxies` (在`download_satellite_image`函数内): 如果需要，请修改代理的地址和端口号。
 
