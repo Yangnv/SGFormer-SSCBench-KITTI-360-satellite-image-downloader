@@ -26,7 +26,7 @@ SGFormer-SSCBench-KITTI-360 卫星图像下载器
 3.  **KITTI-360 数据集**: 您需要已经下载了 `OXTS Sync Measurements (37.3M) ` 部分，特别是包含了 `oxts` 数据的文件夹。
 4.  **Google Maps API 密钥**:
       - 一个有效的 Google Maps Static API 密钥。
-      - （可选，但推荐）一个URL签名密钥（URL Signing Secret）以提高安全性。
+      - 一个URL签名密钥（URL Signing Secret）以提高安全性。
 5.  **网络代理**: 如果您所在的地区无法直接访问 Google 服务，需要一个可用的网络代理工具。
 
 ## 配置与设置
