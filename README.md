@@ -3,11 +3,11 @@ SSCBench-KITTI-360 卫星图像下载器
 
 ## 概述
 
-这是一个 Python 脚本，用于为 [KITTI-360](https://www.cvlibs.net/datasets/kitti-360/index.php) 数据集自动下载对应的卫星图像。脚本会读取数据集中每个时间帧的 GPS 坐标，并从 Google Maps Static API 获取高质量的卫星视图图像，这对于进行卫星-地面视图融合的研究（如 [SGFormer](https://github.com/gxytcrc/SGFormer)）至关重要。
+这是一个 Python 脚本，用于为 [SSCBench-KITTI-360](https://huggingface.co/datasets/ai4ce/SSCBench/tree/main/sscbench-kitti) 数据集自动下载对应的卫星图像。脚本会读取数据集中每个时间帧的 GPS 坐标，并从 Google Maps Static API 获取高质量的卫星视图图像，这对于进行卫星-地面视图融合的研究（如 [SGFormer](https://github.com/gxytcrc/SGFormer)）至关重要。
 
 ## 主要功能
 
-  - **批量处理**: 一次性处理多个 KITTI-360 的行驶序列（sequence）。
+  - **批量处理**: 一次性处理多个 SSCBench-KITTI-360 的行驶序列（sequence）。
   - **高效率下载**: 使用多线程并发下载，显著提升大规模数据集的下载速度。
   - **URL签名**: 支持 Google Maps API 的 URL 签名，增强安全性并适用于企业级密钥。
   - **代理支持**: 内置网络代理（Proxy）支持，方便在受限网络环境下使用。
@@ -24,7 +24,7 @@ SSCBench-KITTI-360 卫星图像下载器
     ```bash
     pip install requests tqdm
     ```
-3.  **KITTI-360 数据集**: 您需要已经下载了 `data_raw` 部分，特别是包含了 `oxts` 数据的文件夹。
+3.  **SSCBench-KITTI-360 数据集**: 您需要已经下载了 `data_raw` 部分，特别是包含了 `oxts` 数据的文件夹。
 4.  **Google Maps API 密钥**:
       - 一个有效的 Google Maps Static API 密钥。
       - （可选，但推荐）一个URL签名密钥（URL Signing Secret）以提高安全性。
@@ -37,7 +37,7 @@ SSCBench-KITTI-360 卫星图像下载器
 3.  **修改参数**: 找到 `main` 函数下的 `>>> 需要你修改的路径和参数 <<<` 部分，并根据您的实际情况填写以下信息：
       - `API_KEY`: 您的 Google Maps API 密钥。
       - `URL_SIGNING_SECRET`: 您的 URL 签名密钥。
-      - `DATASET_ROOT`: 您存放 KITTI-360 数据集的根目录路径。
+      - `DATASET_ROOT`: 您存放 SSCBench-KITTI-360 数据集的根目录路径。
       - `SEQUENCES_TO_DOWNLOAD`: 一个 Python 列表，包含了您希望下载的所有行驶序列的名称。
       - `ZOOM_LEVEL`: 地图的缩放级别，**19** 是为了匹配约0.2米/像素的比例尺。
       - `MAX_WORKERS`: 并发下载的线程数。根据您的网络状况调整，建议从10开始。
