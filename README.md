@@ -23,7 +23,7 @@
     ```bash
     pip install requests tqdm
     ```
-3.  **KITTI-360 数据集**: 您需要已经下载了 `OXTS Sync Measurements (37.3M) ` 部分，特别是包含了 `oxts` 数据的文件夹。
+3.  **KITTI-360 数据集**: 您需要已经下载了 [`Vechicle Poses (8.9M)` 和 `OXTS Sync Measurements (37.3M)`](https://www.cvlibs.net/datasets/kitti-360/download.php) 部分，特别是包含了 `oxts` 数据的文件夹。
 4.  **Google Maps API 密钥**:
       - 一个有效的 Google Maps Static API 密钥。
       - 一个URL签名密钥（URL Signing Secret）以提高安全性。
